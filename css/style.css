@@ -1,0 +1,653 @@
+@font-face {
+    src: url(../fonts/JFFlatregular.ttf);
+    font-family: ar-font;
+}
+
+body {
+    direction: rtl;
+    font-family: ar-font;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*page index*/
+
+nav.navbar img {
+    margin-right: 30px;
+}
+
+nav.navbar ul {
+    margin-right: 25%;
+}
+
+nav.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: orangered;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: red;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.shop-bag svg {
+margin-right: 200px; 
+font-size: 24px;
+color: orange;
+transition: all .3s ease;
+}
+
+.shop-bag svg:hover {
+    color: orangered;
+}
+
+.navbar-toggler {
+    background-color: orange;
+    padding: 5px 10px;
+}
+
+.navbar-toggler span svg {
+    color: black;
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+
+#carousel-products {
+    background-color: coral;
+    height: 50vh;
+}
+
+#carousel-products .carousel-item img {
+    height: 375px;
+}
+
+#carousel-products .product-details {
+    border: 1px solid #c2c2ccbe;
+    padding: 20px;
+    position: relative;
+    top: 125px;
+    height: 200px;
+    width: 450px;
+    background-color: coral;
+    border-radius: 3px;
+}
+
+#carousel-products .product-details .offres-1 {
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #c2c2ccbe;
+    background-color: coral;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -25px;
+    right: -15px;
+}
+
+#carousel-products .product-details .custom-heading {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#carousel-products .product-details a {
+    font-weight: normal;
+    font-size: 22px;
+    text-decoration: none;
+    border: 1px solid yellow;
+    margin-top: 25px;
+    transition: all .3s ease;
+    background-color: yellow;
+}
+
+#carousel-products .product-details a button svg {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#carousel-products .product-details a:hover {
+    background-color: yellowgreen;
+}
+
+#carousel-products .product-details .larg {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-20deg);
+    top: -25px;
+    left: -15px;
+}
+
+.sale {
+    background-color: teal;
+    color: wheat;
+    font-weight: bold;
+    position: absolute;
+}
+
+.custom-carousel-indicators-primary {
+    top: 298px;
+    right: 35%;
+}
+.custom-carousel-indicators-primary img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.custom-carousel-indicators-primary img.active {
+    border-color: red;
+}
+
+.custom-carousel-control {
+    font-size: 20px;
+}
+
+#store-features {
+    background-color: rgba(247, 247, 247, 0.9);
+    padding-bottom: 40px;
+    padding-top: 15px;
+    top: -35px;
+    position: relative;
+    box-shadow: 3px 2px 3px rgb(197, 197, 197);
+    border-radius: 2px;
+
+}
+
+#store-features h3.custom-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#store-features .feature p {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.container h3.custom-heading-products {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.custom-thumbnail img {
+    height: 250px;
+    width: 100%;
+}
+#carousel-products-sold .custom-thumbnail {
+    border-radius: 0;
+    box-shadow: 3px 10px 8px rgba(211, 211, 211, 0.8);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#carousel-products-sold .card-body h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#carousel-products-sold .card-body .price-product {
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: yellowgreen;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: teal;
+    font-weight: normal;
+}
+
+#carousel-products-sold .rating {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #c2c2ccbe;
+}
+
+#carousel-products-sold .rating .active {
+    color: orange;
+}
+
+#carousel-products-sold .btn-add-to-card {
+    background-color: palegreen;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all .3s ease;
+}
+
+#carousel-products-sold .btn-add-to-card:hover,
+#carousel-products-sold .btn-add-to-card:focus,
+#carousel-products-sold .btn-add-to-card:active {
+    background-color: yellowgreen;
+}
+
+#carousel-products-sold .btn-add-to-card svg {
+    margin-right: 10px;
+}
+
+#swal2-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.custom-carousel-indicators {
+    width: 100%;
+    position: static;
+    margin: 0;
+    margin-right: -20px;
+    margin-bottom: 20px;
+}
+
+.custom-carousel-indicators > li {
+    height: 15px;
+    width: 15px;
+    background-color : orange;
+    border-radius: 50%;
+}
+
+.custom-carousel-indicators > li.active {
+    background-color: orangered;
+} 
+
+.testimonials {
+    background-image: url(../images/ecommerce.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 55vh;
+}
+
+.testimonials .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#carousel-testimonials {
+    background-color: rgba(0, 180, 180, 0.9);
+    width: 50%;
+    height: 45vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    position: relative;
+    right: 25%;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    margin-top: 50px;
+}
+
+#carousel-testimonials img {
+   margin-top: 35px;
+   margin-bottom: 30px;
+   width: 100px;
+}
+
+#carousel-testimonials h5.name-person {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#carousel-testimonials p.comments {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 500;
+    color: wheat;
+}
+
+.custom-haeding-rating {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+figure .rating {
+    margin-top: 10px;
+    color: rgb(100, 100, 100);
+}
+
+figure .rating .active {
+    color: orange;
+}
+
+#carousel-testimonials span svg {
+    font-size: 30px;
+    color: orangered;
+}
+
+footer {
+    background-color: #000000ee;
+}
+
+.contacts-and-social {
+    background-image: url(../images/puzzle.png);
+    background-position: center center;
+    background-size: cover; 
+}
+
+footer form.form {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+footer .custom-heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: wheat;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+form.form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-top: 1px solid #c2c2cc9d;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+form.form input:focus, form.form input:active {
+    border-color: orangered;
+}
+
+form.form input {
+    border-radius: 0;
+}
+
+form.form button.btn-primary {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+form button.btn-primary {
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+
+form .btn-primary:hover {
+    border: 1px solid orange;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+}
+
+.list-group {
+    border-top: 1px solid #c2c2cc9d;
+    padding-top: 20px;
+} 
+
+.list-group li {
+    background-color: transparent;
+}
+
+.list-group li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: normal;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+.list-group li a:hover {
+    color: orangered;
+}
+
+.payments h4.custom-heading-payments {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: palegoldenrod;
+}
+
+#footer-last-social-copyright {
+    background-color: #1a1a1afb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#footer-last-social-copyright h4.text-copyright {
+    font-weight: normal;
+    font-size: 18px;
+    color: orangered;
+}
+
+#footer-last-social-copyright ul li {
+    margin-right: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: orange;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+#footer-last-social-copyright ul li:hover {
+    background-color: orangered;
+}
+
+#footer-last-social-copyright ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-last-social-copyright ul li a:hover {
+    color: whitesmoke;
+}
+
+
+/*****************
+*******************
+********************
+
+Responsive Page index.html
+
+***********************
+***********************
+************************/
+
+@media(max-width: 1199px) {
+    nav.navbar ul li {
+        margin-right: 18px;
+    }
+
+    #carousel-products-sold .card-body h4 {
+        font-size: 23px;
+        font-weight: normal;
+    }
+
+    .custom-thumbnail img {
+        height: 225px;
+    }
+
+    #carousel-testimonials p.comments {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .payments img {
+        margin-right: -38px;
+    }
+}
+
+@media(max-width: 991px) {
+    .shop-bag svg {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    nav a.nav-link {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .custom-carousel-indicators-primary {
+        right: 30%;
+    }
+
+    #carousel-testimonials {
+        width: 80%;
+        height: 44vh;
+        right: 8%;
+    }
+
+    .payments img {
+        margin-right: 5px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #carousel-products-sold .btn-add-to-card {
+        font-weight: normal;
+    }
+
+    #carousel-products .carousel-item img {
+        height: 350px;
+        margin-right: -90px;
+    }
+
+    #carousel-products .product-details {
+        width: 360px;
+        right: -35px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    #carousel-testimonials {
+        width: 100%;
+        margin-right: -40px;
+    }
+
+    #carousel-products-sold .btn-add-to-card {
+        float: left;
+    }
+
+    #carousel-products .carousel-item img {
+        height: 280px;
+        margin-top: 40px;
+    }
+
+    #carousel-products .product-details {
+        width: 310px;
+        right: -60px;
+        top: 100px;
+        height: 180px;
+    }
+
+    .custom-carousel-indicators-primary {
+        display: none;
+    }
+
+    .custom-carousel-control {
+        font-size: 15px;
+    }
+
+    #footer-last-social-copyright h4.text-copyright {
+        font-size: 16px;
+        margin-right: 132px;
+        margin-bottom: 20px;
+    }
+
+    ul.list-inline {
+        margin-left: 132px;
+    }
+    
+}
+
+@media(max-width: 575px) {
+    #carousel-products .product-details {
+        display: none;
+    }
+
+    #carousel-products .carousel-item img {
+        height: 320px;
+        margin-right: 120px;
+    }
+
+    #carousel-testimonials {
+        width: 98%;
+    }
+
+    #footer-last-social-copyright h4.text-copyright {
+        margin-right: 140px;
+    }
+}
+
+@media(max-width: 320px) {
+    .custom-carousel-control {
+        display: none;
+    }
+
+    #carousel-products .carousel-item img {
+        margin-right: 0px;
+    }
+
+    #carousel-testimonials {
+        width: 90%;
+        right: 17%;
+    }
+
+    #carousel-testimonials p.comments, 
+    #carousel-testimonials h5.name-person,
+    .custom-haeding-rating {
+        font-size: 16px;
+    }
+
+    #carousel-testimonials span svg {
+        display: none;
+    }
+
+    footer .custom-heading {
+        font-size: 16px;
+    }
+
+    form.form label {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .list-group li a {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .payments h4.custom-heading-payments {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #footer-last-social-copyright h4.text-copyright {
+        margin-right: 0px;
+    }
+
+    #footer-last-social-copyright ul li {
+        display: none;
+    }
+
+}
