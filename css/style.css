@@ -655,12 +655,18 @@ Responsive Page index.html
 }
 
 @media(min-width: 320px) and (max-width: 575.98px) {
+
+    #carousel-products {
+        height: 38vh;
+    }
+
     .custom-carousel-control {
         display: none;
     }
 
     #carousel-products .carousel-item img {
         margin-right: 0px;
+        height: 280px;
     }
 
     #carousel-testimonials {
@@ -671,7 +677,8 @@ Responsive Page index.html
     #carousel-testimonials p.comments, 
     #carousel-testimonials h5.name-person,
     .custom-haeding-rating {
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: normal;
     }
 
     #carousel-testimonials span svg {
@@ -730,7 +737,7 @@ Responsive Page index.html
 
     #carousel-testimonials p.comments {
         font-size: 15px;
-        font-weight: 600;
+        font-weight: normal;
     }
 
     .list-group li a {
@@ -740,6 +747,16 @@ Responsive Page index.html
     nav.navbar ul {
         padding: 0;
         margin: 0;
+        background-color: transparent;
+    }
+
+    #carousel-testimonials .carousel-item .img-user {
+        width: 30%;
+    }
+
+    #store-features h3.custom-heading {
+        font-size: 18px;
+        font-weight: 600;
     }
 
 }
