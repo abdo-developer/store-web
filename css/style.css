@@ -751,7 +751,8 @@ Responsive Page index.html
     }
 
     #carousel-testimonials .carousel-item .img-user {
-        width: 30%;
+        width: 35%;
+        margin-top: 22px;
     }
 
     #store-features h3.custom-heading {
