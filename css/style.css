@@ -470,7 +470,7 @@ Responsive Page index.html
 ***********************
 ************************/
 
-@media(max-width: 1199px) {
+@media(max-width: 1200px) {
     nav.navbar ul li {
         margin-right: 18px;
     }
@@ -491,19 +491,19 @@ Responsive Page index.html
     }
 
     .payments img {
-        margin-right: -38px;
+        width: 100%;
     }
 }
 
-@media(max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .shop-bag svg {
         margin: 0;
         font-size: 25px;
     }
 
     nav a.nav-link {
-        font-size: 17px;
-        font-weight: bold;
+        font-size: 15px;
+        font-weight: 600;
     }
 
     .custom-carousel-indicators-primary {
@@ -537,11 +537,20 @@ Responsive Page index.html
     }
 }
 
-@media(max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    nav.navbar ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .shop-bag svg{
+        margin-right: 0;
+    }
 
     #carousel-testimonials {
-        width: 100%;
-        margin-right: -40px;
+        width: 75%;
+        margin-right: -105px;
     }
 
     #carousel-products-sold .btn-add-to-card {
@@ -570,17 +579,33 @@ Responsive Page index.html
 
     #footer-last-social-copyright h4.text-copyright {
         font-size: 16px;
-        margin-right: 132px;
         margin-bottom: 20px;
     }
-
-    ul.list-inline {
-        margin-left: 132px;
-    }
     
+    .payments img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #footer-last-social-copyright ul li {
+        font-size: 16px;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+    }
 }
 
-@media(max-width: 575px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    nav.navbar ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .shop-bag svg{
+        margin-right: 0;
+    }
+
     #carousel-products .product-details {
         display: none;
     }
@@ -591,15 +616,45 @@ Responsive Page index.html
     }
 
     #carousel-testimonials {
-        width: 98%;
+        width: 95%;
+        right: 3%;
     }
 
     #footer-last-social-copyright h4.text-copyright {
         margin-right: 140px;
+        font-size: 16px;
+    }
+
+    .payments img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .payments h4.custom-heading-payments {
+        font-weight: normal;
+        font-size: 17px;
+    }
+
+    
+    #footer-last-social-copyright ul {
+        margin-left: 135px;
+        margin-top: 10px;
+    }
+
+    #footer-last-social-copyright ul li {
+        font-size: 15px;
+        background-color: orange;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .custom-carousel-indicators-primary img {
+        display: none;
     }
 }
 
-@media(max-width: 320px) {
+@media(min-width: 320px) and (max-width: 575.98px) {
     .custom-carousel-control {
         display: none;
     }
@@ -609,8 +664,8 @@ Responsive Page index.html
     }
 
     #carousel-testimonials {
-        width: 90%;
-        right: 17%;
+        width: 80%;
+        right: 10%;
     }
 
     #carousel-testimonials p.comments, 
@@ -639,15 +694,52 @@ Responsive Page index.html
 
     .payments h4.custom-heading-payments {
         font-size: 14px;
-        font-weight: 600;
+        font-weight: normal;
     }
 
     #footer-last-social-copyright h4.text-copyright {
-        margin-right: 0px;
+        margin-right: 0;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     #footer-last-social-copyright ul li {
         display: none;
+    }
+
+    .payments img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #carousel-products-sold .btn-add-to-card {
+        float: left;
+    }
+
+    #carousel-products .product-details {
+        display: none;
+    }
+
+    .custom-carousel-indicators-primary {
+        display: none;
+    }
+
+    .shop-bag svg {
+        margin-right: 0;
+    }
+
+    #carousel-testimonials p.comments {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .list-group li a {
+        font-weight: normal;
+    }
+
+    nav.navbar ul {
+        padding: 0;
+        margin: 0;
     }
 
 }
