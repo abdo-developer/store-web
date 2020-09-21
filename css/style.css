@@ -212,30 +212,30 @@ transition: all .3s ease;
     font-weight: normal;
 }
 
-#carousel-products-sold .rating {
+.rating {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #c2c2ccbe;
 }
 
-#carousel-products-sold .rating .active {
+.rating .active {
     color: orange;
 }
 
-#carousel-products-sold .btn-add-to-card {
+ .btn-add-to-card {
     background-color: palegreen;
     font-weight: bold;
     margin-top: 15px;
     transition: all .3s ease;
 }
 
-#carousel-products-sold .btn-add-to-card:hover,
-#carousel-products-sold .btn-add-to-card:focus,
-#carousel-products-sold .btn-add-to-card:active {
+.btn-add-to-card:hover,
+.btn-add-to-card:focus,
+.btn-add-to-card:active {
     background-color: yellowgreen;
 }
 
-#carousel-products-sold .btn-add-to-card svg {
+.btn-add-to-card svg {
     margin-right: 10px;
 }
 
@@ -461,6 +461,244 @@ form .btn-primary:hover {
 
 
 /*****************
+******************
+******************
+
+Page Product.html
+
+*****************
+*****************
+*****************/
+
+nav ol.breadcrumb {
+    background-color: #c2c2cc4d;
+}
+
+nav li.breadcrumb-item a {
+    text-decoration: none;
+    color: teal;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+nav li.breadcrumb-item.active {
+    font-size: 13px;
+}
+
+nav li.breadcrumb-item.active span{
+    margin-right: 8px;
+}
+
+#slide-products-details {
+    position: relative;
+}
+
+#slide-products-details .carousel-item img {
+    height: 400px;
+    margin-bottom: 40px;
+    border: 1px solid gray;
+}
+
+#slide-products-details .carousel-indicators {
+    position: absolute;
+    margin-top: 75px;
+    right: -35%;
+}
+
+.custom-heading-product {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title-product {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.6);
+    padding-top: 15px;
+}
+
+.price-product {
+    font-weight: normal;
+    margin-top: 15px;
+    padding-top: 15px;
+    background-color: teal;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: wheat;
+}
+
+.text-product {
+    margin-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.6);
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h5.color, h5.size {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.6);
+    padding-top: 15px;
+}
+
+
+.size input[type="radio"], .color input[type="radio"] {
+    display: none;
+}
+
+.size label {
+    margin-left: 15px;
+    border: 1px solid yellowgreen;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.size label.active {
+    border-color: red;
+} 
+
+.size label:hover {
+    cursor: pointer;
+}
+
+.color label {
+    padding: 7px 15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.color label.active {
+    border-color: red;
+}
+
+.color label:hover {
+    cursor: pointer;
+}
+
+.the-required-number h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    padding-top: 15px;
+}
+
+.the-required-number .custom-form-control {
+    width: 20%;
+    border-color: green;
+    margin-bottom: 15px;
+}
+
+.the-required-number .custom-form-control:focus {
+    border-color: orange;
+}
+
+.custom-btn-add2 {
+    margin-bottom: 25px;
+}
+
+.description-products h4 {
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.description-products p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.description-products ul {
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 20px;
+}
+.description-products ul li {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/**** comments *******/
+
+.custom-heading-comments {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.custom-card {
+    padding: 15px 30px;
+    margin-bottom: 45px;
+}
+
+.custom-card .image img {
+    width: 65%;
+}
+
+.meta .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.meta .title a {
+    text-decoration: none;
+    color: orangered;
+    transition: all .3s ease;
+}
+
+.meta .title a:hover {
+    color: orange;
+}
+
+h6.time {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.post-description {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+h4.suggestions {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************
 *******************
 ********************
 
@@ -471,6 +709,7 @@ Responsive Page index.html
 ************************/
 
 @media(max-width: 1200px) {
+
     nav.navbar ul li {
         margin-right: 18px;
     }
@@ -493,9 +732,23 @@ Responsive Page index.html
     .payments img {
         width: 100%;
     }
+
+    /***** page products ******/
+
+    #slide-products-details .carousel-indicators {
+        right: -6%;
+    }
+
+    button.btn.custom-btn-add2.btn-add-to-card {
+        float: left;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }    
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*** page index ****/
     .shop-bag svg {
         margin: 0;
         font-size: 25px;
@@ -522,7 +775,7 @@ Responsive Page index.html
         max-width: 100%;
     }
 
-    #carousel-products-sold .btn-add-to-card {
+    .btn-add-to-card {
         font-weight: normal;
     }
 
@@ -534,6 +787,66 @@ Responsive Page index.html
     #carousel-products .product-details {
         width: 360px;
         right: -35px;
+    }
+
+    /**** page products *****/
+    nav.navbar ul {
+        margin-right: 10%;
+    }
+
+    svg.svg-inline--fa.fa-shopping-bag.fa-w-14 {
+        margin-right: 100px;
+    }
+
+    #carousel-products-sold .card-body h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #carousel-products-sold .card-body .price-product {
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    #slide-products-details .carousel-item img {
+        margin-right: 30%;
+    }
+
+    #slide-products-details .carousel-indicators {
+        right: 21%;
+    }
+
+    .custom-heading-product {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .the-required-number .custom-form-control {
+        width: 15%;
+    }
+
+    button.btn.custom-btn-add2.btn-add-to-card {
+        float: left;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    }
+
+    span.float-right {
+        font-weight: 600;
+    }
+
+    .payments h4.custom-heading-payments {
+        font-weight: 500;
+    }
+
+    footer .custom-heading {
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
@@ -553,7 +866,7 @@ Responsive Page index.html
         margin-right: -105px;
     }
 
-    #carousel-products-sold .btn-add-to-card {
+    .btn-add-to-card {
         float: left;
     }
 
@@ -592,6 +905,37 @@ Responsive Page index.html
         height: 25px;
         width: 25px;
         line-height: 25px;
+    }
+
+    /**** page products *****/
+
+    button.btn.custom-btn-add2.btn-add-to-card {
+        margin-top: -50px;
+    }
+
+    footer .custom-heading {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .payments h4.custom-heading-payments {
+        font-weight: 500;
+    }
+
+    #slide-products-details .carousel-item img {
+        margin-right: 150px;
+    }
+
+    #slide-products-details .carousel-indicators {
+        right: 15%;
+    }
+
+    .custom-heading-product {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 
@@ -649,8 +993,35 @@ Responsive Page index.html
         line-height: 30px;
     }
 
-    .custom-carousel-indicators-primary img {
-        display: none;
+    #slide-products-details .carousel-item img {
+        margin-right: 11%;
+    }
+
+    #slide-products-details .carousel-indicators {
+        right: 7%;
+    }
+
+    .custom-heading-product {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    button.btn.custom-btn-add2.btn-add-to-card {
+        float: left;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    button.btn.custom-btn.btn-add-to-card {
+        float: left;
+    }
+
+    footer .custom-heading {
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
@@ -710,8 +1081,16 @@ Responsive Page index.html
         font-weight: 600;
     }
 
+    ul.list-inline {
+        margin-right: -25%;
+        margin-top: 15px;
+    }
+
     #footer-last-social-copyright ul li {
-        display: none;
+        font-size: 15px;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
     }
 
     .payments img {
@@ -719,7 +1098,7 @@ Responsive Page index.html
         width: 100%;
     }
 
-    #carousel-products-sold .btn-add-to-card {
+    .btn-add-to-card {
         float: left;
     }
 
@@ -751,13 +1130,84 @@ Responsive Page index.html
     }
 
     #carousel-testimonials .carousel-item .img-user {
-        width: 35%;
-        margin-top: 22px;
+        width: 30%;
+        margin-top: 12px;
     }
 
     #store-features h3.custom-heading {
         font-size: 18px;
         font-weight: 600;
+    }
+
+    #carousel-testimonials h5.name-person,
+    h5.name-person {
+        margin-bottom: -15px;
+    }
+
+    .custom-haeding-rating {
+        margin-top: -10px;
+    }
+
+    /****** page products *********/
+
+    #slide-products-details .carousel-item img {
+        height: 250px;
+    }
+
+    .custom-carousel-indicators-primary img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #slide-products-details .carousel-indicators {
+        right: -11%;
+        top: 53%;
+    }
+
+    .custom-heading-product {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .title-product, .text-product {
+        font-size: 15px;
+    }
+
+    .price-product {
+        font-weight: 500;
+        margin-top: 25px;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .float-left.color {
+        margin-left: 55%;
+        margin-top: 15px;
+    }
+
+    .custom-card .image img {
+        width: 60%;
+    }
+
+    .meta .title {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .post-description {
+        font-size: 14px;
+    }
+
+    #carousel-products-sold .card-body h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    button.btn.custom-btn.btn-add-to-card {
+        margin-top: 40px;
     }
 
 }
