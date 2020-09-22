@@ -502,7 +502,7 @@ nav li.breadcrumb-item.active span{
 #slide-products-details .carousel-indicators {
     position: absolute;
     margin-top: 75px;
-    right: -35%;
+    right: -6%;
 }
 
 .custom-heading-product {
@@ -684,19 +684,146 @@ h4.suggestions {
 }
 
 
+/************
+*****************
+**********************
+****************************
+
+page products-search.html
+
+*******************************
+***********************
+********************/
+
+#filter-resultas {
+    position: relative;
+}
+
+#filter-resultas .filter-type .title-filter {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+#filter-resultas .custom-list-group {
+    border-top: none;
+    margin-bottom: 25px;
+
+}
+
+#filter-resultas .custom-list-group li {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#filter-resultas .custom-list-group li span {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: wheat;
+}
+
+#filter-resultas .title-filter-price {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
 
 
+#filter-resultas .price-min-and-max span {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.ui-slider {
+    margin-top: 10px;
+    background-color: teal;
+    border: 2px solid gray;
+    position: relative;
+    height: 10px;
+}
+
+.ui-widget-header {
+    background-color: teal;
+}
+
+.ui-slider .ui-slider-handle {
+    background-color: rgb(31, 31, 31);
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: -3.5px;
+}
+
+.ui-slider .ui-slider-handle:hover {
+    cursor: pointer;
+}
+
+.search-sumbit {
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-right: 45%;
+    transition: all 0.3s ease;
+    
+} 
+
+.search-sumbit:hover,
+.search-sumbit:active,
+.search-sumbit:focus {
+    background-color: orange;
+    color: black;
+}
 
 
+/********** PAGE research-results *********/
 
+.just-text {
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+    padding-bottom: 15px;
+    display: inline-block;
+}
 
+nav.pagination {
+    position: relative;
+}
 
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border-radius: 3px;
+}
 
+nav.pagination ul {
+    margin-right: 35%;
+}
 
+nav.pagination ul li{
+    margin-left: 5px;
+}
 
+nav.pagination ul li a {
+    border: 1px solid gray;
+    border-radius: 3px;
+    text-decoration: none;
+    color: orangered;
+    transition: all 0.2s ease;
+}
 
-
-
+nav.pagination ul li a:hover {
+    background-color: #fff;
+    color: orange;
+}
 
 /*****************
 *******************
@@ -708,7 +835,7 @@ Responsive Page index.html
 ***********************
 ************************/
 
-@media(max-width: 1200px) {
+@media(min-width: 1200px) and (max-width: 1250px) {
 
     nav.navbar ul li {
         margin-right: 18px;
@@ -848,6 +975,12 @@ Responsive Page index.html
         font-size: 20px;
         font-weight: 500;
     }
+
+    /************** research-results.html ******************/
+
+    nav.pagination ul {
+        margin-right: 29%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -937,6 +1070,31 @@ Responsive Page index.html
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
+    /**** products-search.html *******/
+    
+    .search-sumbit {
+        margin-left: 39%;
+    }
+
+    /********** research-results ***********/
+
+    .custom-heading-1X {
+        font-size: 17px;
+        font-weight: normal;
+    }
+
+    #carousel-products-sold .card-body .price-product {
+        padding: 3px 6px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: tomato;
+    }
+
+    nav.pagination ul {
+        margin-right: 24%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1022,6 +1180,19 @@ Responsive Page index.html
     footer .custom-heading {
         font-size: 20px;
         font-weight: 500;
+    }
+
+    /****** page products-search ********/
+
+    .search-sumbit {
+        margin-left: 39%;
+        margin-right: 41%;
+    }
+
+    /************* research-results ***************/
+
+    nav.pagination ul {
+        margin-right: 10%;
     }
 }
 
@@ -1210,4 +1381,24 @@ Responsive Page index.html
         margin-top: 40px;
     }
 
+    /****** page products-saerch **********/
+
+    .search-sumbit {
+        margin-left: 31%;
+        margin-right: 20%;
+    }
+
+    button.btn.custom-btn.btn-add-to-card.search-sumbit {
+        margin-top: 0;
+    }
+
+    /************* research-results ******************/
+
+    .devices-col {
+        display: none;
+    }
+
+    nav.pagination ul {
+        margin-right: 9%;
+    }
 }

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج البحث</title>
+
+    <link rel="stylesheet" href="font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!--القائمة العلوية-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href=".">
+                <img src="images/logo.png" alt="شعار الموقع" class="navbar-brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">البحث المتقدم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">عن متجرنـا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shop-bag" href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--الأقسام الفرعية-->
+        <nav id="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item"><a href="products-search.html">البحث المتقدم</a></li>
+                <li class="breadcrumb-item active">
+                    <span>نتائج البحث</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!--نتائج البحث-->
+        <div class="container">
+            <h3 class="text-center custom-heading-products just-text">
+                نتائج البحث حسب النوع والسعر
+            </h3>
+            <div id="carousel-products-sold" class="col-12">
+                <!--الحاوية الأولى للمنتجات-->
+                <div class="row">
+                    <!--product 1 -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/adidas_2.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رياضي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        75$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 2-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/adidas_4.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">قميص قطن</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        35$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 3-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_3.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رجالي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        29.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 4-->
+                    <div class="col-lg-3 d-lg-block d-md-none">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_1.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء شبابي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        19.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--الحاوية الثانية للمنتجات-->
+                <div class="row">
+                    <!--product 1 -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/tshirt.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رياضي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        15.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 2-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_3.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">قميص قطن</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        13.50$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 3-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_2.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رجالي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        17.65$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 4-->
+                    <div class="col-lg-3 d-lg-block d-md-none">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/product_2.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء شبابي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        24.15$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--الحاوية الثالثة للمنتجات-->
+                <div class="row">
+                    <!--product 1 -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/tshirt.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رياضي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        35.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 2-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_3.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">قميص قطن</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        26.50$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 3-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_2.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رجالي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        43.15$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 4-->
+                    <div class="col-lg-3 d-lg-block d-md-none">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/product_2.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء شبابي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        12.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--الحاوية الرابعة للمنتجات-->
+                <div class="row">
+                    <!--product 1 -->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/adidas_2.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رياضي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        75$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 2-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/adidas_4.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">قميص قطن</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        35$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 3-->
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_3.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء رجالي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        29.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--product 4-->
+                    <div class="col-lg-3 d-lg-block d-md-none">
+                        <div class="card custom-thumbnail">
+                            <a href="product.html">
+                                <img src="images/puma_1.jpg" alt="قميص">
+                            </a>
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="custom-heading float-right custom-heading-1X">حذاء شبابي</h4>
+                                    <div class="price-product float-left price-product-1X">
+                                        19.99$
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-right">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <button class="btn custom-btn btn-add-to-card" data-add-to-cart="">
+                                        أضف للعربة
+                                        <i class="fas fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- أرقام التنقل بين الصفحات -->
+        <div class="col-12">
+            <nav class="pagination">
+                <ul class="pagination custom-pagination">
+                    <li class="page-item"><a href="#" class="page-link">السابق</a></li>
+                    <li class="page-item devices-col"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item devices-col"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item devices-col"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item devices-col"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item devices-col"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link">التالي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--ذيل الصفحة-->
+    <footer class="contacts-and-social">
+        <!--نموذج الاشتراك-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class=" text-center custom-heading">
+                        النشرة البريدية
+                    </h3>
+                    <form class="form">
+                        <label for="email-footer" class="text">
+                            اشترك لتتوصل بكل عروض وخصومات متجرنـا
+                        </label>
+                        <br>
+                        <div class="input-group">
+                            <input id="footer-email" class="form-control custom-form-control" type="email"
+                                placeholder="بريدك الإلكتروني" name="email" required>
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-primary">
+                                    اشترك الآن
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--روابط التنقل-->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="#">التعريف بمتجرنا</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">شروط الاستخدام</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">سياسية الخصوصية</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">كيف يعمل متجرنا ؟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="#">الأسئلة الشائعة</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">هل الدفع الإلكتروني آمن ؟</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">تقييمات العملاء</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">تأسيس المتجر متى ؟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="#">اتصل بنا</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">اطلب المساعدة</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">تتبع الطلبات</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--طرق الدفع الآمنة-->
+            <div class="container">
+                <div class="row payments">
+                    <div class="col offset-lg-1">
+                        <h4 class="text-center custom-heading-payments">وسائل الدفع المتاحة</h4>
+                        <img src="images/payments.png" alt="وسائل الدفع">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--حقوق المكلية مع روابط التواصل الاجتماعي-->
+        <div id="footer-last-social-copyright" class="col-12">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="clearfix">
+                        <div class="float-right">
+                            <h4 class="text-copyright">
+                                &copy; جميع الحقوق محفوظة 2020
+                            </h4>
+                        </div>
+                        <div class="float-left">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://web.facebook.com/" target="_blank">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.youtube.com/" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="font-awsome/js/all.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

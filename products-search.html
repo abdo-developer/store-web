@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ابحث بحسب النوع والسعر</title>
+
+  <link rel="stylesheet" href="font-awsome/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <!--القائمة العلوية-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href=".">
+        <img src="images/logo.png" alt="شعار الموقع" class="navbar-brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav  mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">البحث المتقدم</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">عن متجرنـا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تواصل معنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link shop-bag" href="#">
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--الأقسام الفرعية-->
+    <nav id="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item"><a href="products-search.html">البحث المتقدم</a></li>
+          <li class="breadcrumb-item active">
+              <span>البحث بحسب النوع والسعر</span>
+            </li>
+        </ol>
+    </nav>
+
+    <!--نتائج البحث المتقدم-->
+    <div class="row">
+      <div class="container">
+        <div id="filter-resultas" class="col-12">
+
+            <!--العمود الجانبي-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-type">
+                        <h5 class="title-filter text-center">التصفية بحسب النوع</h5>
+                    </div>  
+                    <ul class="list-group custom-list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          مـلابس للأطفال
+                          <span class="badge badge-primary badge-pill">147</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          ملابس للرجال والشباب
+                          <span class="badge badge-primary badge-pill">314</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          ملابس للنساء
+                          <span class="badge badge-primary badge-pill">137</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          إلكترونيات
+                          <span class="badge badge-primary badge-pill">422</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          أحذية
+                          <span class="badge badge-primary badge-pill">133</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          مكاتب 
+                          <span class="badge badge-primary badge-pill">211</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          آلات موسيقية
+                          <span class="badge badge-primary badge-pill">144</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          هواتف وحواسيب
+                          <span class="badge badge-primary badge-pill">1440</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          كتب
+                          <span class="badge badge-primary badge-pill">1477</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          مأكـولات ووجبات سريعة
+                          <span class="badge badge-primary badge-pill">133</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          دراجات نارية
+                          <span class="badge badge-primary badge-pill">411</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          دراجات هوائية
+                          <span class="badge badge-primary badge-pill">741</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          سيارات 
+                          <span class="badge badge-primary badge-pill">1401</span>
+                        </li>
+                      </ul>                        
+                  </div>
+            </div>
+
+            <!--تصفية بحسب السعر المناسب-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-price">
+                        <h5 class="title-filter-price text-center">حدد السعر المناسب</h5>
+                        <div class="price-min-and-max">
+                            <span id="price-min" class="float-right">50$</span>
+                            <span id="price-max" class="float-left">1000$</span>
+                        </div>
+                        <br>
+                        <div id="price-range"></div>
+                    </div>
+                  
+                </div>
+            </div>
+         
+          <!--زر البحث-->
+          <div class="row">
+            <div class="col-12">
+              <a href="research-results.html">
+                <button class="btn custom-btn btn-add-to-card search-sumbit" type="submit">ابحث الآن</button>
+              </a>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>  
+</div>
+
+
+  <!--ذيل الصفحة-->
+  <footer class="contacts-and-social">
+    <!--نموذج الاشتراك-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h3 class=" text-center custom-heading">
+            النشرة البريدية
+          </h3>
+          <form class="form">
+            <label for="email-footer" class="text">
+              اشترك لتتوصل بكل عروض وخصومات متجرنـا
+            </label>
+            <br>
+            <div class="input-group">
+              <input id="footer-email" class="form-control custom-form-control" type="email"
+                  placeholder="بريدك الإلكتروني" name="email" required>
+              <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary">
+                      اشترك الآن
+                  </button>
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+      <!--روابط التنقل-->
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="#">التعريف بمتجرنا</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">شروط الاستخدام</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">سياسية الخصوصية</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">كيف يعمل متجرنا ؟</a>
+            </li>
+          </ul>          
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="#">الأسئلة الشائعة</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">هل الدفع الإلكتروني آمن ؟</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">تقييمات العملاء</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">تأسيس المتجر متى ؟</a>
+            </li>
+          </ul>          
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="#">اتصل بنا</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">اطلب المساعدة</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">تتبع الطلبات</a>
+            </li>
+          </ul>          
+        </div>
+      </div>
+      <!--طرق الدفع الآمنة-->
+      <div class="container">
+        <div class="row payments">
+          <div class="col offset-lg-1">
+            <h4 class="text-center custom-heading-payments">وسائل الدفع المتاحة</h4>
+            <img src="images/payments.png" alt="وسائل الدفع">
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--حقوق المكلية مع روابط التواصل الاجتماعي-->
+      <div id="footer-last-social-copyright" class="col-12">
+        <div class="container">
+          <div class="container-fluid">
+            <div class="clearfix">
+              <div class="float-right">
+                  <h4 class="text-copyright">
+                    &copy; جميع الحقوق محفوظة 2020
+                  </h4>
+              </div>
+              <div class="float-left">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://web.facebook.com/"  target="_blank"> 
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.twitter.com/"  target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.youtube.com/"  target="_blank"> 
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <script src="font-awsome/js/all.min.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+    <script>
+
+  $(document).ready(function() {
+
+$( "#price-range" ).slider({
+range: true,
+min: 50,
+max: 1000,
+step: 50,
+values: [ 60, 950 ],
+slide: function( event, ui ) {
+    $('#price-min').text(ui.values[0]);
+    $('#price-max').text(ui.values[1]);
+}
+});
+
+  });
+
+    </script>
+</body>
+
+</html>

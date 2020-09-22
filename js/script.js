@@ -1,3 +1,6 @@
+
+$(document).ready(function() {
+
 // تم إضافة المنتج للعربة
 
 $('[data-add-to-cart]').click(function(e) {
@@ -7,6 +10,10 @@ $('[data-add-to-cart]').click(function(e) {
     'success'
   )
     e.stopPropagation();
+  });
+
 });
+
+
 
 
