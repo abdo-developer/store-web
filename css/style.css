@@ -870,7 +870,12 @@ Responsive Page index.html
         float: left;
         margin-top: -50px;
         margin-bottom: 50px;
-    }    
+    }   
+    
+    /**** index ***/
+    .testimonials {
+        height: 57.1vh; 
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
